@@ -34,6 +34,9 @@ const olThird = document.querySelector('ol .third');
 const footerDiv = document.querySelector('.footer');
 footerDiv.classList.add('main');
 
+// Remove the class main on the div with a class of footer.
+footerDiv.classList.remove('main');
+
 // Create a new li element
 const insertLi = document.createElement('li');
 
