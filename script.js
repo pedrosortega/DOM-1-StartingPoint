@@ -50,3 +50,7 @@ ollis.forEach(li => {
 const removeFoot = document.querySelector('div.footer');
 removeFoot.remove();
 
+// Add the class main to the div with a class of footer
+const footerDiv = document.querySelector('.footer');
+footerDiv.classList.add('main');
+
