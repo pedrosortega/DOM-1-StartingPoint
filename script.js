@@ -5,7 +5,7 @@ console.log("Hello! If you see this, the script is working.");
 - [✓] Select the section with an id of container using querySelector.
 - [ ] Select all of the list items with a class of "second".
 - [✓] Select a list item with a class of third, but only the list item inside of the ol tag.
-- [ ] Give the section with an id of container the text "Hello!".
+- [✓] Give the section with an id of container the text "Hello!".
 - [ ] Add the class main to the div with a class of footer.
 - [ ] Remove the class main on the div with a class of footer.
 - [✓] Create a new li element.
@@ -29,6 +29,9 @@ console.log("getTheElement",getTheElement)
 
 // Select a list item with a class of third, but only the list item inside of the ol tag.
 const olThird = document.querySelector('ol .third');
+
+//Give the section with an id of container the text "Hello!".
+document.getElementById("container").textContent = "Hello!";
 
 // Create a new li element
 const insertLi = document.createElement('li');
