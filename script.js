@@ -34,3 +34,14 @@ insertLi.textContent = 'four';
 
 // Append the li to the ul element.
 document.querySelector('ul').appendChild(insertLi);
+
+// Loop over all of the lis inside the ol tag and give them a background color of "green".
+const ollis = document.querySelectorAll('ol li');
+
+ollis.forEach(li => {
+  li.style.backgroundColor = 'green';
+});
+
+// Remove the div with a class of footer.
+const removeFoot = document.querySelector('div.footer');
+removeFoot.remove();
