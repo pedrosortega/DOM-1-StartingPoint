@@ -27,16 +27,22 @@ console.log("noSelector",noSelector);
 const getTheElement=document.querySelector("#container");
 console.log("getTheElement",getTheElement);
 
-// [ ] Select all of the list items with a class of "second".
+// Select all of the list items with a class of "second".
 const secondListItems=document.getElementsByClassName("second");
 console.log("secondListItems",secondListItems);
 
 // Select a list item with a class of third, but only the list item inside of the ol tag.
 const olThird = document.querySelector('ol .third');
 
+//Give the section with an id of container the text "Hello!".
+document.getElementById("container").textContent = "Hello!";
+
 // Add the class main to the div with a class of footer
 const footerDiv = document.querySelector('.footer');
 footerDiv.classList.add('main');
+
+// Remove the class main on the div with a class of footer.
+footerDiv.classList.remove('main');
 
 // Create a new li element
 const insertLi = document.createElement('li');
