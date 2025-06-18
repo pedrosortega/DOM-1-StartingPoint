@@ -34,3 +34,7 @@ insertLi.textContent = 'four';
 
 // Append the li to the ul element.
 document.querySelector('ul').appendChild(insertLi);
+
+//- [ ] Select the section with an id of container using querySelector.
+const getTheElement=document.querySelector("#container");
+console.log("getTheElement",getTheElement)
