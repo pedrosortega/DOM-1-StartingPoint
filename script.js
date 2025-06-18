@@ -54,7 +54,5 @@ ollis.forEach(li => {
 const removeFoot = document.querySelector('div.footer');
 removeFoot.remove();
 
-
-
 // Remove the class main on the div with a class of footer.
 
