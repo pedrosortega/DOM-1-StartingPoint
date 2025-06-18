@@ -11,8 +11,8 @@ console.log("Hello! If you see this, the script is working.");
 - [✓] Create a new li element.
 - [✓] Give the li the text "four".
 - [✓] Append the li to the ul element.
-- [ ] Loop over all of the lis inside the ol tag and give them a background color of "green".
-- [ ] Remove the div with a class of footer.
+- [✓] Loop over all of the lis inside the ol tag and give them a background color of "green".
+- [✓] Remove the div with a class of footer.
 */
 
 // Try rewriting this without using querySelector
