@@ -11,8 +11,8 @@ console.log("Hello! If you see this, the script is working.");
 - [✓] Create a new li element.
 - [✓] Give the li the text "four".
 - [✓] Append the li to the ul element.
-- [ ] Loop over all of the lis inside the ol tag and give them a background color of "green".
-- [ ] Remove the div with a class of footer.
+- [✓] Loop over all of the lis inside the ol tag and give them a background color of "green".
+- [✓] Remove the div with a class of footer.
 */
 
 // Try rewriting this without using querySelector
@@ -23,12 +23,16 @@ console.log("header", header);
 const noSelector=document.getElementById("container");
 console.log("noSelector",noSelector);
 
-// Select a list item with a class of third, but only the list item inside of the ol tag.
-const olThird = document.querySelector('ol .third');
+// Select the section with an id of container using querySelector.
+const getTheElement=document.querySelector("#container");
+console.log("getTheElement",getTheElement);
 
 // [ ] Select all of the list items with a class of "second".
 const secondListItems=document.getElementsByClassName("second");
 console.log("secondListItems",secondListItems);
+
+// Select a list item with a class of third, but only the list item inside of the ol tag.
+const olThird = document.querySelector('ol .third');
 
 // Create a new li element
 const insertLi = document.createElement('li');
@@ -39,7 +43,13 @@ insertLi.textContent = 'four';
 // Append the li to the ul element.
 document.querySelector('ul').appendChild(insertLi);
 
-//- [ ] Select the section with an id of container using querySelector.
-const getTheElement=document.querySelector("#container");
-console.log("getTheElement",getTheElement);
+// Loop over all of the lis inside the ol tag and give them a background color of "green".
+const ollis = document.querySelectorAll('ol li');
 
+ollis.forEach(li => {
+  li.style.backgroundColor = 'green';
+});
+
+// Remove the div with a class of footer.
+const removeFoot = document.querySelector('div.footer');
+removeFoot.remove();
