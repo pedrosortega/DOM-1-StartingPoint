@@ -30,6 +30,10 @@ console.log("getTheElement",getTheElement)
 // Select a list item with a class of third, but only the list item inside of the ol tag.
 const olThird = document.querySelector('ol .third');
 
+// Add the class main to the div with a class of footer
+const footerDiv = document.querySelector('.footer');
+footerDiv.classList.add('main');
+
 // Create a new li element
 const insertLi = document.createElement('li');
 
@@ -50,7 +54,7 @@ ollis.forEach(li => {
 const removeFoot = document.querySelector('div.footer');
 removeFoot.remove();
 
-// Add the class main to the div with a class of footer
-const footerDiv = document.querySelector('.footer');
-footerDiv.classList.add('main');
+
+
+// Remove the class main on the div with a class of footer.
 
