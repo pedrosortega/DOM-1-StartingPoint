@@ -34,6 +34,9 @@ console.log("secondListItems",secondListItems);
 // Select a list item with a class of third, but only the list item inside of the ol tag.
 const olThird = document.querySelector('ol .third');
 
+//Give the section with an id of container the text "Hello!".
+document.getElementById("container").textContent = "Hello!";
+
 // Add the class main to the div with a class of footer
 const footerDiv = document.querySelector('.footer');
 footerDiv.classList.add('main');
