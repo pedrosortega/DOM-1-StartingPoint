@@ -2,7 +2,7 @@ console.log("Hello! If you see this, the script is working.");
 
 /*
 - [✓] Select the section with an id of container without using querySelector.
-- [ ] Select the section with an id of container using querySelector.
+- [✓] Select the section with an id of container using querySelector.
 - [ ] Select all of the list items with a class of "second".
 - [✓] Select a list item with a class of third, but only the list item inside of the ol tag.
 - [ ] Give the section with an id of container the text "Hello!".
@@ -22,6 +22,10 @@ console.log("header", header);
 // Select the section with an id of container without using querySelector.
 const noSelector=document.getElementById("container");
 console.log("noSelector",noSelector);
+
+// Select the section with an id of container using querySelector.
+const getTheElement=document.querySelector("#container");
+console.log("getTheElement",getTheElement)
 
 // Select a list item with a class of third, but only the list item inside of the ol tag.
 const olThird = document.querySelector('ol .third');
@@ -45,3 +49,4 @@ ollis.forEach(li => {
 // Remove the div with a class of footer.
 const removeFoot = document.querySelector('div.footer');
 removeFoot.remove();
+
