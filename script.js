@@ -18,3 +18,8 @@ console.log("Hello! If you see this, the script is working.");
 // Try rewriting this without using querySelector
 const header = document.querySelector("#container");
 console.log("header", header);
+
+// [ ] Select the section with an id of container without using querySelector.
+
+const noSelector=document.getElementById("container");
+console.log("noSelector",noSelector);
